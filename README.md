@@ -32,6 +32,7 @@ The dataset contains customer-level information for a span of four consecutive m
 The business objective is to predict the churn in the last (i.e. the ninth) month using the data (features) from the first three months. To do this task well, understanding the typical customer behaviour during churn will be helpful.
 
 #### Understanding Customer Behaviour During Churn
+---
 Customers usually do not decide to switch to another competitor instantly, but rather over a period of time (this is especially applicable to high-value customers). In churn prediction, we assume that there are three phases of customer lifecycle :
 -1 The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
 
@@ -42,11 +43,13 @@ Customers usually do not decide to switch to another competitor instantly, but r
 In this case, since we are working over a four-month window, the first two months are the ‘good’ phase, the third month is the ‘action’ phase, while the fourth month is the ‘churn’ phase.
 
 #### Dataset and Data Dictionary
+---
 The dataset can be downloaded from here.
 Data dictionary is uploaded. The data dictionary contains meanings of abbreviations. Some frequent ones are loc (local), IC (incoming), OG (outgoing), T2T (telecom operator to telecom operator), T2O (telecom operator to another operator), RECH (recharge) etc.
 The attributes containing 6, 7, 8, 9 as suffixes imply that those correspond to the months 6, 7, 8, 9 respectively.
 
 #### Data Preparation
+---
 The following data preparation steps are crucial for this problem:
 
 -1 Derive new features This is one of the most important parts of data preparation since good features are often the differentiators between good and bad models. We will use our business understanding to derive features that we think could be important indicators of churn.
@@ -63,6 +66,7 @@ After tagging churners, we need to remove all the attributes corresponding to th
 
 ---
 ## Modelling
+---
 Build models to predict churn. The predictive model that we are going to build will serve two purposes:
 
 -1 It will be used to predict whether a high-value customer will churn or not, in near future (i.e. churn phase). By knowing this, the company can take action steps such as providing special plans, discounts on recharge etc.
