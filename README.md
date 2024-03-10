@@ -35,7 +35,8 @@ The business objective is to predict the churn in the last (i.e. the ninth) mont
 ---
 Customers usually do not decide to switch to another competitor instantly, but rather over a period of time (this is especially applicable to high-value customers). In churn prediction, we assume that there are three phases of customer lifecycle :
 
-Features
+Features  
+-1 
 -1 The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
 -2 The ‘action’ phase: The customer experience starts to sore in this phase, for e.g. he/she gets a compelling offer from a competitor, faces unjust charges, becomes unhappy with service quality etc. In this phase, the customer usually shows different behaviour than the ‘good’ months. Also, it is crucial to identify high-churn-risk customers in this phase, since some corrective actions can be taken at this point (such as matching the competitor’s offer/improving the service quality etc.)
 
